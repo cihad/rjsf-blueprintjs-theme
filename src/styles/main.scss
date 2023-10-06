@@ -1,0 +1,53 @@
+.list-inline {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+fieldset {
+  padding: 0 1em 1em;
+  border: 2px solid #ddd;
+}
+
+fieldset fieldset {
+  border: 2px groove;
+}
+
+fieldset fieldset fieldset,
+fieldset fieldset fieldset fieldset {
+  border: 1px groove;
+}
+
+legend.rjsf-title-field {
+  font-size: 1.2em;
+  border-bottom: 1px solid;
+  display: block;
+  padding: 0 0 0.5em;
+  margin-left: 0;
+}
+
+fieldset > legend.rjsf-title-field {
+  border: none;
+  display: inline;
+  padding: 0 0.3em 0;
+  margin-left: -0.3em;
+}
+
+fieldset > *:first-child:not(legend) {
+  margin-top: 1em;
+}
+
+legend.rjsf-title-field + * {
+  margin-top: 1.4 em;
+}
+
+legend {
+  // font-size: 1em;
+  font-weight: bold;
+}
+
+.bp4-input-group input[type='color'] {
+  padding: 0 2px;
+}
